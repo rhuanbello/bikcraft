@@ -2,12 +2,67 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+}
+
+.btn {
+    border: 4px solid #FEC63E;
+    color:#FEC63E;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 10px 27px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    border: 4px solid #ffffff;
+    color:#ffffff;
+}
+
+.btn.btn-preto:hover{
+    border: 4px solid #000000;
+    color:#000000;
+}
+
+.produtos .subtitulo{
+    
+}
+
+.subtitulo {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: center;
+    
+}
+
+.subtitulo:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #FEC63E;
+}
+
+.produtos .subtitulo:after{
+    margin: 12px auto 77px auto;
+}
+
+/* HEADER */
+
 .header {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #FEC63E;
     height: 80px;
+    z-index: 1;
 }
 
 .header_menu{
@@ -40,4 +95,143 @@ body {
 
 header img{
     padding-top: 9px;
+}
+
+/* INTRODUÇÃO */
+
+.introducao {
+    width: 100%;
+    background: url("/img/bg-home.jpg");
+    background-size: cover;
+    margin-top: 80px;
+    height: 380px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.introducao h1 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.quote-externo {
+    max-width: 300px;
+    margin: 0 auto;
+    color: white;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.quote-externo p {
+    font-style: italic;
+}
+
+.quote-externo p:before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: white;
+    margin: 18px auto 12px auto;
+}
+
+.quote-externo p:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: white;
+    margin: 12px auto 20px auto;
+}
+
+.quote-externo cite {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.container .btn{
+    margin-top: 39px;
+}
+
+.introducao .btn {
+    background-color: rgba(0, 0, 0, 0.40);
+}
+
+/* Produtos */
+
+.produtos {
+    padding: 56px 0;
+}
+
+.produtos_lista li{
+    background: #FEC63E;
+    text-align: center;
+}
+
+.produtos_lista li h3{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-top: 15px;
+}
+
+.produtos_lista li h3:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    margin: 12px auto 0 auto;
+}
+
+.produtos_lista li p {
+    padding: 14px 20px 23px 20px;
+}
+
+.produtos_icone {
+    background: #000;
+    padding: 45px;
+}
+
+.call {
+    padding-top: 77px;
+    text-align: center;
+    clear: both;
+}
+
+.call p{
+    margin-bottom: 27px;
+}
+
+/* Portfólio */
+
+.portfolio {
+    width: 100%;
+    background: #000;
+    padding: 57px 0 57px 0;
+}
+
+.portfolio .subtitulo{
+    color:#FEC63E;
+}
+
+.portfolio .subtitulo:after{
+    margin: 12px auto 25px auto;
+}
+
+.portfolio .call {
+    padding-top: 40px;
+}
+
+.portfolio_lista li:last-child {
+    margin-top: 15px;
+
+}
+
+.portfolio .call p{
+    color: white;
 }
