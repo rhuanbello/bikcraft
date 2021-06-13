@@ -7,6 +7,10 @@ p {
     font-size: 14px;
 }
 
+img {
+    display: block;
+}
+
 .btn {
     border: 4px solid #FEC63E;
     color:#FEC63E;
@@ -28,10 +32,6 @@ p {
     color:#000000;
 }
 
-.produtos .subtitulo{
-    
-}
-
 .subtitulo {
     font-size: 24px;
     font-weight: bold;
@@ -50,8 +50,50 @@ p {
     background: #FEC63E;
 }
 
+.subtitulo_interno {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    
+}
+
+.subtitulo_interno:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #FEC63E;
+    margin: 12px 0 20px 0;
+}
+
 .produtos .subtitulo:after{
     margin: 12px auto 77px auto;
+}
+
+.introducao_interno {
+    width: 100%;
+    height: 160px;
+    text-align: center;
+    padding-top: 38px;
+    margin-top: 80px;
+    color: #fff;
+}
+
+.introducao_interno h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.quote-interno p:before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: white;
+    margin: 10.5px auto 11px auto;
 }
 
 /* HEADER */
@@ -88,6 +130,10 @@ p {
     padding: 10px 0;
 }
 
+.header_menu ul li a.ativo {
+    color: white;
+}
+
 .header_menu ul li a:hover{
    color: #fff;
 }
@@ -101,7 +147,7 @@ header img{
 
 .introducao {
     width: 100%;
-    background: url("/img/bg-home.jpg");
+    background: url("../img/bg-home.jpg");
     background-size: cover;
     margin-top: 80px;
     height: 380px;
@@ -228,10 +274,158 @@ header img{
 }
 
 .portfolio_lista li:last-child {
-    margin-top: 15px;
+    margin-top: 20px;
 
 }
 
 .portfolio .call p{
     color: white;
+}
+
+/* Qualidade */
+
+.qualidade .call {
+    padding-top: 0px;
+}
+
+.qualidade {
+    padding: 56px 0 60px 0;
+    overflow: auto;
+}
+
+.qualidade:after{
+    content: "";
+    width: 634px;
+    height: 83px;
+    display: block;
+    background: url("../img/svg/linhas.svg");
+    position: absolute;
+    top: 183px;
+    right: 162px;
+}
+
+.qualidade .subtitulo:after{
+    margin: 12px auto 24px auto;
+}
+
+.qualidade img{
+    margin: 0 auto;
+}
+
+.qualidade_lista li{
+    text-align: center;
+    padding: 30px 40px 0px 40px;
+}
+
+.qualidade_lista li h3{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-top: 30px;
+}
+
+.qualidade_lista li h3:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    margin: 10px auto 0 auto;
+    z-index: -1;
+}
+
+.qualidade_lista li p {
+    padding: 10px 0 56px 0;
+}
+
+/* Quebra */
+
+.quebra .quote-externo{
+    max-width: 400px;
+}
+
+.quebra{
+    width: 100%;
+    height: 220px;
+    background: url("../img/bg-quote.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+/* Footer */
+
+.footer{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 21px 0;
+}
+
+.footer h3{
+    color: #FEC63E;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.footer h3:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #FEC63E;
+    margin: 10px 0 20px 0;
+}
+
+.footer_historia{
+    padding-right: 50px;
+}
+
+.footer_historia p{
+    line-height: 20px;
+}
+
+.footer_contato ul li{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.footer_redes ul li{
+    display: inline-block;   
+    margin-right: 15px;
+}
+
+.footer_redes ul li a{
+    border: 3px solid #FEC63E;
+    display: block;
+}
+
+.footer_redes ul li a:hover{
+    border-color:#fff;
+}
+
+.footer_redes .fb{
+    padding: 10.7px 16.6px;
+}
+
+.footer_redes .in{
+    padding: 10.7px;
+}
+
+.footer_redes .tw{
+    padding: 12.9px 10.6px;
+}
+
+.copy{
+    background-color: #FEC63E;
+    width: 100%;
+    padding: 22px 0;
 }
