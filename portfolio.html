@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
     <header class="header">
@@ -30,24 +31,41 @@
     </header>
     <header class="introducao_interno interno_portfolio">
         <div class="container">
-            <h1>PORTFÓLIO</h1>
+            <h1 data-anime="400" class="fadeInDown">PORTFÓLIO</h1>
             <blockquote class="quote-interno">
-            <p>conheça os projetos que amamos mostrar</p>
+            <p data-anime="800" class="fadeInDown">conheça os projetos que amamos mostrar</p>
         </div>
     </header>
-    <section class="container">
+    <section data-anime="1200" class="container fadeInDown" data-slide="quote">
         <blockquote class="quote_clientes">
-            <p>"No mundo atual, há contínua expansão de nossa atividade cumpre 
-                um papel essencial na formulação da geste periódica de reivindicação 
-                do mundo moderno."</p>
+            <p>"Nada melhor do que dar um rolé com a minha Bikcraft na orla.
+                Essa é a minha companheira mais fiel, nunca me traiu e está sempre a 
+                miha disposição."</p>
+            <span>Jhony Rato</span>
+        </blockquote>
+        <blockquote class="quote_clientes">
+            <p>"Aqueles que ainda não possuem uma Bikcraft, não sabem o que
+                estão perdendo. A precisão é absurda ea velocidade transcedental.
+                Nunca vi nada igual"</p>
+            <span>Bernardo</span>
+        </blockquote>
+        <blockquote class="quote_clientes">
+            <p>"Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft
+                fez foi intensificar o meu amor por esta atividade. Recomendo à
+                todos que amo"</p>
             <span>Barbara Moss</span>
         </blockquote>
     </section>
     <section class="portfolio">
-        <div class="container">
+        <div class="container" data-slide="portfolio">
             <ul class="portfolio_lista">
                 <li class="grid-8"><img src="img/portfolio/img-portfolio1.jpg"></li>
                 <li class="grid-8"><img src="img/portfolio/img-portfolio2.jpg"></li>
+                <li class="grid-16"><img src="img/portfolio/img-portfolio3.jpg"></li>
+            </ul>
+            <ul class="portfolio_lista">
+                <li class="grid-8"><img src="img/portfolio/img-portfolio2.jpg"></li>
+                <li class="grid-8"><img src="img/portfolio/img-portfolio1.jpg"></li>
                 <li class="grid-16"><img src="img/portfolio/img-portfolio3.jpg"></li>
             </ul>
         </div>
@@ -91,5 +109,8 @@
             </div>
         </div>
     </footer>
+    <script src="js/simple-anime.js"></script>
+    <script src="js/simple-slide.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
