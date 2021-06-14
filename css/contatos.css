@@ -1,6 +1,6 @@
 /* Introdução */
 
-.interno_produtos{
+.interno_contato{
     background: url("../img/bg-contato.jpg") no-repeat center;
     background-size: cover;
 }
@@ -99,7 +99,7 @@
 }
 
 .contato_dados {
-    padding: 10px 0 60px 0;
+    padding: 10px 0 0px 0;
 }
 
 .mapa {
