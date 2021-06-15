@@ -97,6 +97,12 @@ img {
     margin: 10.5px auto 11px auto;
 }
 
+.nao-aparece{
+    visibility: hidden;
+    position: absolute;
+    height: 0px;
+}
+
 /* HEADER */
 
 .header {
@@ -483,4 +489,12 @@ header img{
     opacity: 1;
     transform: none;
     transition: opacity 800ms, transform 800ms;
+}
+
+#form-sucesso{
+    color: #31AA39;
+}
+
+#form-erro{
+    color: #F64540;
 }

@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <title>Bikcraft - Conheça os Produtos</title>
+    <link rel="shortcut icon" href="/img/svg/favicon.ico" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bikcraft</title>
+    <meta name="description" content="Compre a sua Bikcraft hoje mesmo!
+    Possuímos moedelos Passeio, Retrô e Esporte.">
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Bikcraft - Bicicletas Artesanais"/>
+    <meta property="og:description" content="Compre a sua Bikcraft hoje mesmo!
+    Possuímos moedelos Passeio, Retrô e Esporte."/>
+    <meta property="og:url" content="http://rhuanbello-bikcraft.com/produtos.html"/>
+    <meta property="og:image" content="http://rhuanbello-bikcraft.com/img/svg/og-image.png"/>
+    
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
@@ -48,10 +57,9 @@
             <img src="img/produtos/img-subtitulo-passeio.jpg" alt="">
         </div>
         <div class="grid-8 produto_info">
-            <p>Pensando mais a longo prazo, o desenvolvimento
-            contínuo de distintas, pensando mais a longo 
-            prazo, o desenvolvimento contínuo de distintas 
-            pensando mais.</p>
+            <p>Muito melhor do que passear pela orla a vidros fechados. A Bikcraft Passeio é uma bicicleta que une conforto e praticidade para o seu dia a dia. Você nunca mais vai querer saber de outra.
+
+            </p>
             <ul>
                 <li>Conforto</li>
                 <li>Velocidade</li>
@@ -60,7 +68,7 @@
             </ul>
         </div>
     </section>
-    <section class="container produto_item">
+    <section data-anime="1200" class="container produto_item fadeInDown">
         <div class="grid-11">
             <img src="img/produtos/img-titulo-esporte.jpg" alt="">
             <h2>Esporte</h2>
@@ -72,10 +80,9 @@
             <img src="img/produtos/img-subtitulo-esporte.jpg" alt="">
         </div>
         <div class="grid-8 produto_info">
-            <p>Pensando mais a longo prazo, o desenvolvimento
-            contínuo de distintas, pensando mais a longo 
-            prazo, o desenvolvimento contínuo de distintas 
-            pensando mais.</p>
+            <p>Mais rápida do que Forrest Gump, ninguém vai pegar você. A Bikcraft Esporte é uma bicicleta desenhada para a máxima performance. O seu desempenho supera qualquer uma da categoria.
+
+            </p>
             <ul>
                 <li>Conforto</li>
                 <li>Velocidade</li>
@@ -84,7 +91,7 @@
             </ul>
         </div>
     </section>
-    <section class="container produto_item">
+    <section data-anime="1200" class="container produto_item fadeInDown">
         <div class="grid-11">
             <img src="img/produtos/img-titulo-retro.jpg" alt="">
             <h2>Retrô</h2>
@@ -96,10 +103,8 @@
             <img src="img/produtos/img-subtitulo-retro.jpg" alt="">
         </div>
         <div class="grid-8 produto_info">
-            <p>Pensando mais a longo prazo, o desenvolvimento
-            contínuo de distintas, pensando mais a longo 
-            prazo, o desenvolvimento contínuo de distintas 
-            pensando mais.</p>
+            <p>O passado volta para lembrarmos o que devemos fazer no futuro. A Bikcraft Retrô é uma bicicleta estiloza, feita para você que gosta do clássico, mas que não abre mão do conforto.
+            </p>
             <ul>
                 <li>Conforto</li>
                 <li>Velocidade</li>
@@ -111,16 +116,20 @@
     <section class="orcamento">
         <div class="container">
             <h2 class="subtitulo">Orçamento</h2>
-            <form id="form_orcamento" class="form grid-8">
+            <form id="form_orcamento" method="POST" action="enviar.php" class="form grid-8 formphp">
                 <label for="nome">Nome <span>*</span></label>
-                <input type="text" id="nome">
+                <input type="text" id="nome" name="nome" required>
                 <label for="email">E-mail <span>*</span></label>
-                <input type="text" id="email">
+                <input type="email" id="email" name="email" required>
                 <label for="telefone">Telefone</label>
-                <input type="text" id="telefone">
+                <input type="text" id="telefone" name="telefone">
+                <label class="nao-aparece">Se você não é um robô, deixem em branco</label>
+                <input type="text" class="nao-aparece" name="leaveblank">
+                <label class="nao-aparece">Se você não é um robô, não mude este campo</label>
+                <input type="text" class="nao-aparece" name="dontchange" value="http://">
                 <label for="mensagem">Mensagem <span>*</span></label>
-                <textarea id="mensagem"></textarea>
-                <button class="btn" type="submit">Enviar</button>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            <button id="enviar" name="enviar" class="btn" type="submit">Enviar</button>
             </form>
             <div class="orcamento_dados grid-6">
                 <h3>Dados</h3>
@@ -178,6 +187,7 @@
         </div>
     </footer>
     <script src="js/simple-anime.js"></script>
+    <script src="js/simple-form.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
